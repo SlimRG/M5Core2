@@ -1,3 +1,5 @@
+# LIBRARY IS NOT READY TO USE
+
 # M5Core2 Plus Library
 
 Improved version of [M5Core2 Library](https://github.com/m5stack/M5Core2)
@@ -5,10 +7,8 @@ Improved version of [M5Core2 Library](https://github.com/m5stack/M5Core2)
 <img src="https://static-cdn.m5stack.com/resource/docs/static/assets/img/product_pics/core/core2/core2_01.webp" alt="M5Core2_P1" width="350" height="350">
 
 ## Versions
-Main version: 0.0.1
-
+Main version: 0.0.1 </br>
 M5Core2: 0.0.6
-
 
 ## Description of M5Core2 Plus Library
 
