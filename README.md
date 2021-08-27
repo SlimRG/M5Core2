@@ -1,10 +1,14 @@
-# M5Core2 Library
+# M5Core2 Plus Library
 
-English | [中文](README_cn.md)
+Improved version of [M5Core2 Library](https://github.com/m5stack/M5Core2)
 
 <img src="https://static-cdn.m5stack.com/resource/docs/static/assets/img/product_pics/core/core2/core2_01.webp" alt="M5Core2_P1" width="350" height="350">
 
-## Description
+## Description of M5Core2 Plus Library
+
+This library contains additional features, fixes, and additions to the main library. It is important to understand that this library is based on M5Core2. To avoid conflicts, it is strongly recommended not to use this library together with the original M5Core2 (all the functions of the original library are already included in M5Core2 Plus)
+
+## Description of M5Core2
 
 **M5Core2** is the second generation core device in the M5Stack development kit series, which further enhances the functions of the original generation of cores. 
 
@@ -17,38 +21,43 @@ The M5Core2 retains the SD card slot and speakers. However, in order to ensure h
 The 3 icons on the front of the screen are capacitive buttons which are programmable. There is a small expansion board on the back of the base with a 6-axis IMU sensor and microphone.
 
 ## PinMap
+<details> 
+  <summary>LCD & TF card</summary>
+   LCD ：320x240 </br>
+   TF card Maximum size 16GB </br>
 
-**LCD & TF card**
+  <table>
+   <tr><td>ESP32 Chip</td><td>GPIO38</td><td>GPIO23</td><td>GPIO18</td><td>GPIO5</td><td>GPIO15</td><td></td><td> </td><td> </td></tr>
+   <tr><td>AXP192 Chip</td><td> </td><td> </td><td> </td><td> </td><td> </td><td>AXP_IO4</td><td>AXP_DC3</td><td>AXP_LDO2</td></tr>
+   <tr><td>ILI9342C</td><td>MISO</td><td>MOSI</td><td>SCK</td><td>CS</td><td>DC</td><td>RST</td><td>BL</td><td>PWR</td></tr>
+  </table>
 
-LCD ：320x240
-TF card Maximum size 16GB
+  <table>
+  <tr><td>ESP32 Chip</td><td>GPIO38</td><td>GPIO23</td><td>GPIO18</td><td>GPIO4</td></tr>
+  <tr><td>TF Card</td><td>MISO</td><td>MOSI</td><td>SCK</td><td>CS</td></tr>
+  </table>
 
-<table>
- <tr><td>ESP32 Chip</td><td>GPIO38</td><td>GPIO23</td><td>GPIO18</td><td>GPIO5</td><td>GPIO15</td><td></td><td> </td><td> </td></tr>
- <tr><td>AXP192 Chip</td><td> </td><td> </td><td> </td><td> </td><td> </td><td>AXP_IO4</td><td>AXP_DC3</td><td>AXP_LDO2</td></tr>
- <tr><td>ILI9342C</td><td>MISO</td><td>MOSI</td><td>SCK</td><td>CS</td><td>DC</td><td>RST</td><td>BL</td><td>PWR</td></tr>
-</table>
+</details>
 
-<table>
-<tr><td>ESP32 Chip</td><td>GPIO38</td><td>GPIO23</td><td>GPIO18</td><td>GPIO4</td></tr>
-<tr><td>TF Card</td><td>MISO</td><td>MOSI</td><td>SCK</td><td>CS</td></tr>
-</table>
-
-**CAP.TOUCH**
+<details> 
+  <summary>CAP.TOUCH</summary>
 
 <table>
  <tr><td>ESP32 chip</td><td>GPIO21</td><td>GPIO22</td><td>GPIO39</td></tr>
  <tr><td>AXP192</td><td></td><td></td><td></td><td>AXP_IO4</td></tr>
  <tr><td>FT6336U</td><td>SDA</td><td>SCL</td><td>INT</td><td>RST</td></tr>
 </table>
+</details> 
 
-**Mic & NS4168**
+<details> 
+  <summary>Mic & NS4168</summary>
 
 <table>
  <tr><td>ESP32 Chip</td><td>GPIO12</td><td>GPIO0</td><td>GPIO2</td><td>AXP_IO2</td><td>GPIO34</td></tr>
  <tr><td>NS4168</td><td>BCLK</td><td>LRCK</td><td>DATA</td><td>SPK_EN</td> </td></tr>
  <tr><td>Mic</td><td></td><td>CLK</td><td></td><td></td><td>DATA</td></tr>
 </table>
+</details> 
 
 **AXP Power Indicator Light & Vibration motor**
 
