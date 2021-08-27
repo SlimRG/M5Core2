@@ -17,7 +17,7 @@ This library contains additional features, fixes, and additions to the main libr
 ## Description of M5Core2
 <details> 
   <summary>Description</summary>
-**M5Core2** is the second generation core device in the M5Stack development kit series, which further enhances the functions of the original generation of cores. 
+M5Core2 is the second generation core device in the M5Stack development kit series, which further enhances the functions of the original generation of cores. 
 
 The MCU is an ESP32 model D0WDQ6-V3 and has dual core Xtensa® 32-bit 240Mhz LX6 processors that can be controlled separately. WiFi and Bluetooth are supported as standard and it includes an on board 16MB Flash and 8MB PSRAM, USB TYPE-C interface for charging, downloading of programs and serial communication, a 2.0-inch integrated capacitive touch screen, and a built-in vibration motor. 
 
