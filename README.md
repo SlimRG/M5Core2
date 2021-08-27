@@ -6,6 +6,7 @@ Improved version of [M5Core2 Library](https://github.com/m5stack/M5Core2)
 
 ## Versions
 Main version: 0.0.1
+
 M5Core2: 0.0.6
 
 
