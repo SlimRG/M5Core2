@@ -9,7 +9,8 @@ Improved version of [M5Core2 Library](https://github.com/m5stack/M5Core2)
 This library contains additional features, fixes, and additions to the main library. It is important to understand that this library is based on M5Core2. To avoid conflicts, it is strongly recommended not to use this library together with the original M5Core2 (all the functions of the original library are already included in M5Core2 Plus)
 
 ## Description of M5Core2
-
+<details> 
+  <summary>Description</summary>
 **M5Core2** is the second generation core device in the M5Stack development kit series, which further enhances the functions of the original generation of cores. 
 
 The MCU is an ESP32 model D0WDQ6-V3 and has dual core Xtensa® 32-bit 240Mhz LX6 processors that can be controlled separately. WiFi and Bluetooth are supported as standard and it includes an on board 16MB Flash and 8MB PSRAM, USB TYPE-C interface for charging, downloading of programs and serial communication, a 2.0-inch integrated capacitive touch screen, and a built-in vibration motor. 
@@ -19,6 +20,7 @@ M5Core2 also features a built-in RTC module which can provide accurate timing. T
 The M5Core2 retains the SD card slot and speakers. However, in order to ensure higher quality sound output, the I2S digital audio interface power amplifier chip is used to effectively prevent signal distortion. There are independent power and reset buttons on the left side and bottom of the base. 
 
 The 3 icons on the front of the screen are capacitive buttons which are programmable. There is a small expansion board on the back of the base with a 6-axis IMU sensor and microphone.
+</details>
 
 ## PinMap
 <details> 
@@ -59,38 +61,46 @@ The 3 icons on the front of the screen are capacitive buttons which are programm
 </table>
 </details> 
 
-**AXP Power Indicator Light & Vibration motor**
+<details> 
+  <summary>AXP Power Indicator Light & Vibration motor</summary>
 
 <table>
  <tr><td>AXP192</td><td>AXP_IO1</td><td>AXP_LDO3</td></tr>
  <tr><td>Green LED</td><td>Vcc</td><td></td></tr>
  <tr><td>Vibration motor</td><td></td><td>Vcc</td></tr>
 </table>
+</details> 
 
-**RTC**
+<details> 
+  <summary>RTC</summary>
 
 <table>
  <tr><td>ESP32 Chip</td><td>GPIO21</td><td>GPIO22</td><td></td></tr>
  <tr><td>AXP192</td><td></td><td></td><td>AXP_PWR</td></tr>
  <tr><td>BM8563</td><td>SDA</td><td>SCL</td><td>INT</td></tr>
 </table>
+</details>   
 
-**IMU(3-axis gyroscope & 3-axis accelerometer)**
+<details> 
+  <summary>IMU(3-axis gyroscope & 3-axis accelerometer)</summary>  
 
 <table>
  <tr><td>ESP32 Chip</td><td>GPIO21</td><td>GPIO22</td></tr>
  <tr><td>MPU6886</td><td>SDA</td><td>SCL</td></tr>
 </table>
+</details>   
 
-**USB to serial chip**
+<details> 
+  <summary>USB to serial chip</summary>
 
 <table>
  <tr><td>ESP32 Chip</td><td>GPIO1</td><td>GPIO3</td></tr>
  <tr><td>CP2104</td><td>RXD</td><td>TXD</td></tr>
 </table>
+</details> 
 
-
-**Internal I2C connection**
+<details> 
+  <summary>Internal I2C connection</summary>
 
 <table>
  <tr><td>ESP32 Chip</td><td>GPIO21</td><td>GPIO22</td></tr>
@@ -99,11 +109,12 @@ The 3 icons on the front of the screen are capacitive buttons which are programm
  <tr><td>BM8563</td><td>SDA</td><td>SCL</td></tr>
  <tr><td>FT6336U</td><td>SDA</td><td>SCL</td></tr>
 </table>
+</details> 
 
 
 ## M5Core2 M-BUS Schematic diagram
 
-<img src="https://static-cdn.m5stack.com/resource/docs/static/assets/img/product_pics/core/core2/core2_mbus.webp" width = "50%">
+<img src="https://static-cdn.m5stack.com/resource/docs/static/assets/img/product_pics/core/core2/core2_mbus.webp" width = "65%">
 
 ## M5PORT EXPLAIN
 
@@ -123,5 +134,4 @@ The 3 icons on the front of the screen are capacitive buttons which are programm
 </table>
 
 ## More Information
-
 [Product docs](https://docs.m5stack.com/en/core/core2)
