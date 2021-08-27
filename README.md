@@ -4,6 +4,11 @@ Improved version of [M5Core2 Library](https://github.com/m5stack/M5Core2)
 
 <img src="https://static-cdn.m5stack.com/resource/docs/static/assets/img/product_pics/core/core2/core2_01.webp" alt="M5Core2_P1" width="350" height="350">
 
+## Versions
+Main version: 0.0.1
+M5Core2: 0.0.6
+
+
 ## Description of M5Core2 Plus Library
 
 This library contains additional features, fixes, and additions to the main library. It is important to understand that this library is based on M5Core2. To avoid conflicts, it is strongly recommended not to use this library together with the original M5Core2 (all the functions of the original library are already included in M5Core2 Plus)
