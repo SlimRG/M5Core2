@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/SlimRG/M5Core2.git"
+    "url": "https://github.com/SlimRG/M5Core2Plus.git"
   },
   "version": "0.0.6",
   "framework": "arduino",
