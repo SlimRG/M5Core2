@@ -123,6 +123,8 @@ The 3 icons on the front of the screen are capacitive buttons which are programm
 <img src="https://static-cdn.m5stack.com/resource/docs/static/assets/img/product_pics/core/core2/core2_mbus.webp" width = "65%">
 
 ## M5PORT EXPLAIN
+<details> 
+  <summary>M5PORT</summary>
 
 <table>
       <thead>
@@ -138,6 +140,7 @@ The 3 icons on the front of the screen are capacitive buttons which are programm
       </tr>
     </tbody>
 </table>
+</details>
 
 ## More Information
 [Product docs](https://docs.m5stack.com/en/core/core2)
